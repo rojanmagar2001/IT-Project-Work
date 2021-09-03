@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<section class="header" id="C1">
+		<nav>
+			<a href="index.html"><img src="img/logo.png"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html" class="active">HOME</a></li>
+					<li><a href="play.html">PLAY</a></li>
+					<li><a href="gallery.html">GALLERY</a></li>
+					<li><a href="trailer.html">TRAILER</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+	
+	
+	</section>
+
+	<div class="text-box">
+		<h1>World's Most Beautiful RPG</h1>
+		<p>Cyberpunk 2077 is an open-world, action-adventure story set in Night City<br> a megalopolis
+			obsessed with power, glamour and body modification.
+		</p>
+		<a class="hero-btn" href="">Play to Feel</a>
+	</div>
+
+	
+	<section class="slideshow-container">
+
+		<div class="mySlides fade">
+		  <div class="numbertext">1 / 3</div>
+		  <img src="img/img1.jpg" style="width:100%">
+		  <div class="text">Beautiful Night City</div>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">2 / 3</div>
+		  <img src="img/img2.jpg" style="width:100%">
+		  <div class="text">First Person Perspective(FPP)</div>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">3 / 3</div>
+		  <img src="img/img4.jpg" style="width:100%">
+		  <div class="text">Crowded City</div>
+		</div>
+
+		</div>
+
+		<div style="text-align:center">
+		  <span class="dot"></span> 
+		  <span class="dot"></span> 
+		  <span class="dot"></span> 
+		</div>
+
+		<script>
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  for (i = 0; i < slides.length; i++) {
+		    slides[i].style.display = "none";  
+		  }
+		  slideIndex++;
+		  if (slideIndex > slides.length) {slideIndex = 1}    
+		  for (i = 0; i < dots.length; i++) {
+		    dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		  setTimeout(showSlides, 2000); // Change image every 2 seconds
+		}
+		</script>
+	</section>
+
+	
+
+	
+
+	<footer class="footer">
+		<div class="footer-container">
+			<div class="footer-row">
+				<div class="footer-col">
+					<h4>Cyberpunk 2077</h4>
+					<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="play.html">PLAY</a></li>
+					<li><a href="gallery.html">GALLERY</a></li>
+					<li><a href="trailer.html">TRAILER</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+				</div>
+				
+				<div class="footer-col">
+					<h4>Get Help</h4>
+					<ul>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Returns</a></li>
+						<li><a href="#">Read</a></li>
+						<li><a href="#">Comments</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Follow Us</h4>
+					<div class="social-links">
+						<a href="https://www.facebook.com/CyberpunkGame/" ><img src="https://i.ibb.co/x7P24fL/facebook.png" alt=""></a>
+						<a href="https://twitter.com/CyberpunkGame"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png" alt=""></a>
+						<a href="https://www.instagram.com/cyberpunkgame/?hl=en"><img src="https://i.ibb.co/ySwtH4B/instagram.png" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+
+	
+	<script>
+
+		var navLinks = document.getElementById("navLinks");
+
+		function showMenu(){
+			navLinks.style.right = "0";
+		}
+
+		function hideMenu(){
+			navLinks.style.right = "-200px";
+		}
+
+	</script>
+
+
+</body>
+</html>

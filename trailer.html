@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<section class="header" id="C1">
+		<nav>
+			<a href="index.html"><img src="img/logo.png"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="play.html">PLAY</a></li>
+					<li><a href="gallery.html">GALLERY</a></li>
+					<li><a href="trailer.html" class="active">TRAILER</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+	
+	
+
+
+	<section id="C4">
+
+		<div class="showcase">
+
+			<header>
+				<h2 classs="logo">Trailer</h2>
+			</header>
+			<video src="https://cdn.akamai.steamstatic.com/steam/apps/256810256/movie_max_vp9.webm" muted loop autoplay>
+			</video>
+			<div class="overlay"></div>
+
+			<div class="text">
+				<h2>Never Stop</h2>
+				<h3>Exploring The Night City</h3>
+				<p>Become a cyberpunk, an urban mercenary equipped with cybernetic enhancements and build<br>
+				your legend on the streets of Night City.Become a cyberpunk,<br> an urban mercenary equipped with cybernetic enhancements and build your legend<br>on the streets of Night City.</p>
+
+				<a href="">Explore</a>
+			</div>
+
+			<ul class="social">
+				<li><a href="https://www.facebook.com/CyberpunkGame/"><img src="https://i.ibb.co/x7P24fL/facebook.png" alt=""></a></li>
+				<li><a href="https://twitter.com/CyberpunkGame"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png" alt=""></a></li>
+				<li><a href="https://www.instagram.com/cyberpunkgame/?hl=en"><img src="https://i.ibb.co/ySwtH4B/instagram.png" alt=""></a></li>
+			</ul>
+
+		</div>
+ 
+	</section>
+
+	</section>
+
+	
+
+	<footer class="footer">
+		<div class="footer-container">
+			<div class="footer-row">
+				<div class="footer-col">
+					<h4>Cyberpunk 2077</h4>
+					<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="play.html">PLAY</a></li>
+					<li><a href="gallery.html">GALLERY</a></li>
+					<li><a href="trailer.html">TRAILER</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+				</div>
+				
+				<div class="footer-col">
+					<h4>Get Help</h4>
+					<ul>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Returns</a></li>
+						<li><a href="#">Read</a></li>
+						<li><a href="#">Comments</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Follow Us</h4>
+					<div class="social-links">
+						<a href="https://www.facebook.com/CyberpunkGame/" ><img src="https://i.ibb.co/x7P24fL/facebook.png" alt=""></a>
+						<a href="https://twitter.com/CyberpunkGame"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png" alt=""></a>
+						<a href="https://www.instagram.com/cyberpunkgame/?hl=en"><img src="https://i.ibb.co/ySwtH4B/instagram.png" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+
+	
+	<script>
+
+		var navLinks = document.getElementById("navLinks");
+
+		function showMenu(){
+			navLinks.style.right = "0";
+		}
+
+		function hideMenu(){
+			navLinks.style.right = "-200px";
+		}
+
+	</script>
+
+</body>
+</html>
